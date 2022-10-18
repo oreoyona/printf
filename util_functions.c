@@ -48,9 +48,14 @@ void exec_d(va_list ap, char s)
 		long tmp_l = va_arg(ap, int);
 		print_num(tmp_l);
 	}
+	else if (s = 'c')
+	{
+		int tmp = va_arg(ap, int);
+		_write_char(tmp);
+	}
 	else
 	{
-		c = va_arg(ap, const char*);
+		const char *c = va_arg(ap, const char*);
 		_write_char_bis(c);
 	}
 }
@@ -94,8 +99,7 @@ void x_f(int l, const char *format, va_list ap)
                         }
 			if (next == 'c')
                         {
-				tmp = va_arg(ap, int);
-				_write_char(tmp);
+				exec_d(ap, 'c');
 				x = x + 1;
                         }
 			if (check_format(next) == 0 && next == 'x')
@@ -105,5 +109,6 @@ void x_f(int l, const char *format, va_list ap)
 			}
                 else
                         _write_char(format[x]);
-        }
+		}
+	}
 }
