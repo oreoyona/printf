@@ -14,8 +14,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	dest[i] = '\0';
 	return (dest);
 }
-
-
 /**
  * reverse - reverses a string
  * @s: string to reverse
@@ -23,21 +21,23 @@ char *_memcpy(char *dest, char *src, unsigned int n)
  */
 char *reverse(char *s)
 {
-        int len, x;
-        char tmp;
-        char *dest;
-        for (len = 0; s[len] != '\0'; len++)
-        {
-        }
-        dest = malloc(sizeof(char) * len + 1);
-        if (dest == NULL)
-                return (NULL);
-        _memcpy(dest, s, len);
-        for (x = 0; x< len; x++, len--)
-        {
-                tmp = dest[len - 1];
-                dest[len - 1] = dest[x];
-                dest[x] = tmp;
-        }
-        return (dest);
+	int len, x;
+	char tmp;
+	char *dest;
+
+	for (len = 0; s[len] != '\0'; len++)
+	{}
+	dest = malloc(sizeof(char) * len + 1);
+	if (dest == NULL)
+		return (NULL);
+
+	_memcpy(dest, s, len);
+
+	for (x = 0; x < len; x++, len--)
+	{
+		tmp = dest[len - 1];
+		dest[len - 1] = dest[x];
+		dest[x] = tmp;
+	}
+	return (dest);
 }
