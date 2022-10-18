@@ -1,7 +1,7 @@
 #ifndef __MAIN_H__
 #define __MAIN_H__
 #include <stdarg.h>
-
+int dec_to_oct(unsigned int n);
 void print_s(char *str);
 void print_num(long int n);
 int check_format(char c);
