@@ -8,6 +8,8 @@
 #include "util_functions.c"
 #include <limits.h>
 #include <stdio.h>
+#include "strings.c"
+#include "to_hex.c"
 /**
  * main - the main functon of our c program
  * Return: void
