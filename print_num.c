@@ -1,31 +1,21 @@
 /**
  * print_num - print every numbers
  * that is passed onto it
- * @n: the number of args
- * ...: the list of args
+ * @n: the number to be printed
  * Return: void
  */
-void print_num(int n, ...)
+void print_num(long int n)
 {
-        va_list list;
-        int i = 0;
-        int tmp;
-
-        va_start(list, n);
-
-        while (i < n)
+        if (n < 0)
         {
-                tmp = va_arg(list, int);
-                if (tmp <= 9)
-                        putchar(tmp + '0');
-                else
-                {
-                        putchar(tmp / 10 + '0');
-                        putchar(tmp % 10 + '0');
-                }
-
-                i++;
+                _write_char('-');
+                n = n * -1;
         }
 
-        va_end(list);
+        if (n == 0)
+                _write_char('0');
+
+        if (n / 10)
+                print_num(n / 10);
+        _write_char(n % 10 + '0');
 }

@@ -8,7 +8,7 @@ int check_format(char c)
 {
 	int x = 0;
 	int res = -1;
-	char types[] = {'d', 'c', 'f', 'p'};
+	char types[] = {'d', 'i', 'o', 'c', 'f', 'p'};
 
 	for (x = 0; x < 6; x++)
 	{
