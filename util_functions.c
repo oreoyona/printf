@@ -39,7 +39,7 @@ void exec_hex(va_list ap)
 /**
  * exec_d - prints numbers of x_function
  * @ap: list or args
- *
+ *@s: the char
  */
 void exec_d(va_list ap, char s)
 {
@@ -104,11 +104,6 @@ void x_f(int l, const char *format, va_list ap)
 			if (next == 'c')
 			{
 				exec_d(ap, 'c');
-				x = x + 1;
-			}
-			if (check_format(next) == 0 && next == 'x')
-			{
-				exec_hex(ap);
 				x = x + 1;
 			}
 		else
