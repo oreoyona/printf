@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdargh.h>
+#include <stdarg.h>
 #include <stdlib.h>
 #include "print_num.c"
 #include "check_format.c"
