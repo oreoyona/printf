@@ -1,6 +1,8 @@
 #ifndef __PRINT_F___
 #define __PRINT_F___
 #include <stdarg.h>
+#include <stdlib.h>
+
 int dec_to_hex(long n);
 int dec_to_oct(unsigned int n);
 void print_s(char *str);

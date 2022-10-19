@@ -25,6 +25,7 @@ int len(const char *str)
 		i++;
 	return (i);
 }
+<<<<<<< HEAD
 /**
  * exec_hex - calls the to_hex function
  * with the appropriate arguments
@@ -36,6 +37,8 @@ void exec_hex(va_list ap)
 
 	dec_to_hex(tmp);
 }
+=======
+>>>>>>> a0169d8d3466b48867b3ad40e6f03bd98eefdcbe
 /**
  * exec_d - prints numbers of x_function
  * @ap: list or args
@@ -74,7 +77,11 @@ void exec_d(va_list ap, char s)
  */
 void x_f(int l, const char *format, va_list ap)
 {
+<<<<<<< HEAD
 	int x = 0; /*tmp;*/
+=======
+	int x = 0;
+>>>>>>> a0169d8d3466b48867b3ad40e6f03bd98eefdcbe
 	char next;
 
 	for (x = 0; x < l + 1; x++)
@@ -85,8 +92,11 @@ void x_f(int l, const char *format, va_list ap)
 
 			if (check_format(next) == -1)
 			{
+<<<<<<< HEAD
 				/*tmp = va_arg(ap, int);*/
 
+=======
+>>>>>>> a0169d8d3466b48867b3ad40e6f03bd98eefdcbe
 				_write_char(format[x]);
 			}
 			if (check_format(next) == 0 &&

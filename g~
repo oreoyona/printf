@@ -1,5 +1,0 @@
-#!/bin/bash
-MESSAGE="$@"
-git addc.
-git commit -m "$MESSAGE"
-git push
