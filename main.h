@@ -2,12 +2,6 @@
 #define __MAIN_H__
 #include <stdarg.h>
 #include <stdlib.h>
-#include "print_num.c"
-#include "check_format.c"
-#include "write_char.c"
-#include "util_functions.c"
-#include "strings.c"
-#include "to_hex.c"
 
 int dec_to_hex(long n);
 int dec_to_oct(unsigned int n);

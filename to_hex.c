@@ -1,16 +1,15 @@
-/*
-
+#include "main.h"
 /**
  * print_hex - print hex char to standard output
  * @str: String to parse
  */
-/*void print_hex(char *str)
+void print_hex(char *str)
 {
 	int i;
 
 	for (i = 0; str[i] != '\0'; i++)
 		_write_char(str[i]);
-}*/
+}
 
 /**
  * length - returns  the length of an hex number
@@ -18,7 +17,7 @@
  * @base: Base and here kt is 16
  * Return: the length of a number
  */
-/*unsigned int length(unsigned int num, int base)
+int length(int num, int base)
 {
 	unsigned int i;
 
@@ -28,15 +27,13 @@
 	}
 	return (i);
 }
-*/
-
 /**
  * dec_to_hex - concerts a deximal to hexadeximal
  * @n: the decimal to be converted
  * Return: the length of the hexadeximal string
  */
-/*int dec_to_hex(long n)
-{
+/**
+int dec_to_hex(lo{
 	int len, x;
 	char *mem1, *mem2;
 

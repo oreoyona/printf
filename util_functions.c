@@ -86,8 +86,6 @@ void x_f(int l, const char *format, va_list ap)
 			next = format[x + 1];
 			if (check_format(next) == -1)
 			{
-				tmp = va_arg(ap, int);
-
 				_write_char(format[x]);
 			}
 			if (check_format(next) == 0 &&
