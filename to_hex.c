@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 #include "main.h"
->>>>>>> a0169d8d3466b48867b3ad40e6f03bd98eefdcbe
 /**
  * print_hex - print hex char to standard output
  * @str: String to parse
