@@ -22,7 +22,7 @@ int dec_to_oct(unsigned int n)
 	}
 	for (j = i - 1; j > 0; j--)
 		octalnum *= 10 + number[j];
-	l = strlen(octalnum);
+	l = strlen(number);
 
 	return (l);
 }
