@@ -8,7 +8,8 @@
 int _printf(const char *format, ...)
 {
 	va_list ap;
-
+	if (format == NULL)
+		return (-1);
 	va_start(ap, format);
 	x_f(len(format), format, ap);
 	va_end(ap);
