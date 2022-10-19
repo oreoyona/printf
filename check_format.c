@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * check_format - checks wether the given format is valid
  * @c: the char to be tested

@@ -1,3 +1,5 @@
+#include <stdarg.h>
+##include "main.h"
 /**
  * _write_char_bis - mimics _write_char
  * @c: the string to print
@@ -74,10 +76,8 @@ void exec_d(va_list ap, char s)
  */
 void x_f(int l, const char *format, va_list ap)
 {
-	int x = 0, tmp;
+	int x = 0;
 	char next;
-	long tmp_l;
-	const char *c;
 
 	for (x = 0; x < l + 1; x++)
 	{
