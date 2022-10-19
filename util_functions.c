@@ -25,19 +25,6 @@ int len(const char *str)
 		i++;
 	return (i);
 }
-
-/**
- * exec_hex - calls the to_hex function
- * with the appropriate arguments
- * @ap: va_list
- * @
- */
-void exec_hex(va_list ap)
-{
-	long tmp = va_arg(ap, int);
-
-	dec_to_hex(tmp);
-}
 /**
  * exec_d - prints numbers of x_function
  * @ap: list or args
