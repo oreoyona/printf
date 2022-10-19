@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_num - print every numbers
  * that is passed onto it

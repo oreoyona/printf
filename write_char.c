@@ -1,3 +1,4 @@
+#include "main.h"
 #include <unistd.h>
 /**
  * _write_char - write ASCII chars to standard output

@@ -1,5 +1,5 @@
 #include <stdarg.h>
-#include "write_char.c"
+#include "main.h"
 /**
  * _write_char_bis - mimics _write_char
  * @c: the string to print
