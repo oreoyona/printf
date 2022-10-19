@@ -3,7 +3,7 @@
 /**
  * _write_char_bis - mimics _write_char
  * @c: the string to print
- *Return: void
+ * Return: void
  */
 void _write_char_bis(const char *c)
 {
@@ -30,16 +30,16 @@ int len(const char *str)
  * with the appropriate arguments
  * @ap: va_list
  */
-void exec_hex(va_list ap)
+/*void exec_hex(va_list ap)
 {
 	long tmp = va_arg(ap, int);
 
 	dec_to_hex(tmp);
-}
+}*/
 /**
  * exec_d - prints numbers of x_function
  * @ap: list or args
- *@s: the char
+ * @s: the char
  */
 void exec_d(va_list ap, char s)
 {
