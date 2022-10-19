@@ -25,12 +25,10 @@ int len(const char *str)
 		i++;
 	return (i);
 }
-
 /**
  * exec_hex - calls the to_hex function
  * with the appropriate arguments
  * @ap: va_list
- * @
  */
 void exec_hex(va_list ap)
 {
@@ -76,19 +74,18 @@ void exec_d(va_list ap, char s)
  */
 void x_f(int l, const char *format, va_list ap)
 {
-	int x = 0, tmp;
+	int x = 0; /*tmp;*/
 	char next;
-	long tmp_l;
-	const char *c;
 
 	for (x = 0; x < l + 1; x++)
 	{
 		if (format[x] == '%')
 		{
 			next = format[x + 1];
+
 			if (check_format(next) == -1)
 			{
-				tmp = va_arg(ap, int);
+				/*tmp = va_arg(ap, int);*/
 
 				_write_char(format[x]);
 			}
