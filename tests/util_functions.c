@@ -71,28 +71,12 @@ void x_f(int l, const char *format, va_list ap)
 		if (format[x] == '%')
 		{
 			next = format[x + 1];
-			if (check_format(next) == -1)
-			{
+			if (check_format(next) == -1 || next == '%')
 				_write_char(format[x]);
-			}
-			if (check_format(next) == 0 &&
-				(next == 'd' || next == 'i' || next == 'u'))
-			{
-				exec_d(ap, 'd');
-				x += 2;
-			}
-			if (check_format(next) == 0 && (next == 's'))
-			{
-				exec_d(ap, 's');
-				x = x + 2;
-			}
-			if (next == 'c')
-			{
-				exec_d(ap, 'c');
-				x += 2;
-			}
-		else
-			_write_char(format[x]);
+			else
+				exec_d(ap, next);
+			x = x + 2;
 		}
+			_write_char(format[x]);
 	}
 }

@@ -12,6 +12,6 @@ int main(void)
 	char *str;
 
 	str = "school";
-	printf("%c\n", 'W');
-	_printf("%c\n", 'W');
+	printf("%c. La phrase une est: %s et le nombre est %d ce qui equivaut a autant de %%\n", 'A',  "Que la lettre soit imprimee", 12356);
+	_printf("%c. La phrase une est: %s et le nombre est %d ce qui equivaut a autant de %%\n", 'A',  "Que la lettre soit imprimee", 12356);
 }
