@@ -62,6 +62,4 @@ int dec_to_hex(lo{
 	free(mem1);
 	free(mem2);
 	return (len);
-}
-
-*/
+} */ extern int make_iso_compilers_happy;

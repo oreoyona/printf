@@ -3,7 +3,7 @@
 /**
  * _write_char_bis - mimics _write_char
  * @c: the string to print
- *Return: void
+ * Return: void
  */
 void _write_char_bis(const char *c)
 {
@@ -26,9 +26,20 @@ int len(const char *str)
 	return (i);
 }
 /**
+ * exec_hex - calls the to_hex function
+ * with the appropriate arguments
+ * @ap: va_list
+ */
+/*void exec_hex(va_list ap)
+{
+	long tmp = va_arg(ap, int);
+
+	dec_to_hex(tmp);
+}*/
+/**
  * exec_d - prints numbers of x_function
  * @ap: list or args
- *@s: the char
+ * @s: the char
  */
 void exec_d(va_list ap, char s)
 {
@@ -63,7 +74,8 @@ void exec_d(va_list ap, char s)
  */
 void x_f(int l, const char *format, va_list ap)
 {
-	int x = 0;
+	int x = 0; /*tmp;*/
+	
 	char next;
 
 	for (x = 0; x < l + 1; x++)
@@ -71,8 +83,12 @@ void x_f(int l, const char *format, va_list ap)
 		if (format[x] == '%')
 		{
 			next = format[x + 1];
+
 			if (check_format(next) == -1)
 			{
+
+				/*tmp = va_arg(ap, int);*/
+
 				_write_char(format[x]);
 			}
 			if (check_format(next) == 0 &&

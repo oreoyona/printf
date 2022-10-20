@@ -13,8 +13,7 @@ int dec_to_oct(unsigned int n)
 	int i = 1, j, l;
 
 	quotient = n;
-	l = strlen(number);
-
+	
 	while (quotient != 0)
 	{
 		number[i] = quotient % 8;
@@ -23,5 +22,7 @@ int dec_to_oct(unsigned int n)
 	}
 	for (j = i - 1; j > 0; j--)
 		octalnum *= 10 + number[j];
+	l = strlen(number);
+
 	return (l);
 }
