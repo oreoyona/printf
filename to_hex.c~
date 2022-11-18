@@ -1,5 +1,0 @@
-#include "main.h"
-
-/**
- * dec_to_hex - concerts a deximal to hexadeximal
- * 
